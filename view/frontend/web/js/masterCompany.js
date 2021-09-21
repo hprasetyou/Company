@@ -12,7 +12,7 @@ require([
             text: $.mage.__('Close'),
             class: '',
             click: function () {
-                this.closeModal();
+                this.closeModal()
             }
         },{
             text: $.mage.__('Save'),
@@ -24,7 +24,7 @@ require([
                   data: $('#companyForm').serialize()
                 }).then(function(o){
                   if(o.saved){
-                    window.location.reload();
+                    window.location.reload()
                   }
                 })
             }
@@ -41,7 +41,7 @@ require([
         }
       }).then(function(o){
         if(o.success){
-          window.location.reload();
+          window.location.reload()
         }
       })
     })
@@ -62,7 +62,7 @@ require([
       $('#company_id').val(formData.id)
       $('#name').val(formData.name)
       $('#phonenumber').val(formData.phonenumber)
-      var popup = modal(options, $('#modalCompany'));
-      $('#modalCompany').modal('openModal');
-    });
-});
+      var popup = modal(options, $('#modalCompany'))
+      $('#modalCompany').modal('openModal')
+    })
+})
